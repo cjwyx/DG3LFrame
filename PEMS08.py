@@ -66,17 +66,6 @@ CFG.TRAIN = EasyDict()
 CFG.TRAIN.LOSS = megacrn_loss
 CFG.TRAIN.OPTIM = EasyDict()
 CFG.TRAIN.OPTIM.TYPE = "Adam"
-CFG.TRAIN.OPTIM.PARAM = {
-    "lr": 0.008,
-    "eps": 1e-3
-}
-CFG.TRAIN.LR_SCHEDULER = EasyDict()
-CFG.TRAIN.LR_SCHEDULER.TYPE = "MultiStepLR"
-CFG.TRAIN.LR_SCHEDULER.PARAM = {
-    "milestones": [25,50,75,100,130,160],
-    "gamma": 0.3
-}
-
 
 
 
